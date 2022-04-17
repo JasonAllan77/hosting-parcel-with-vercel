@@ -11,7 +11,7 @@
 -   Create a new GitHub repository
 -   Follow the steps for "Uploading an exisitng repo" 1 by 1
 -   Log in/sign up to Vercel
-    -   Go to your Dadshboard and click "New Project"
+    -   Go to your Dashboard and click "New Project"
     -   Import your Parcel Github repsitory
     -   Set the framework preset to Parcel
     -   Customize all of the Build and Output Settings
