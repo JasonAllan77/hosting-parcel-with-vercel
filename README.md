@@ -21,17 +21,31 @@
 
 ## Hiding API Keys
 
--   Install dotenv - npm install dotenv
--   Create a .en file
+-   Install dotenv - `npm install dotenv`
+-   Create a .env file
 
-API-KEY=valuer
+```raw
+API-KEY=value
 SECOND_API_KEY=value
+```
 
--   Make sure .env is in my .giignore (everytime you change your .env. file)
--   At the top of my JS file, import dotenv's config
+-   Make sure .env is in my .giignore (everytime you change your .env. file, you have to restart your server)
+-   At the top of my JS file, import .dotenv's config
 
-js
+```js
 import "dotenv/config";
+```
 
-const
-const secondApiKey = process.env
+-   Access environment variables through `process.env`
+
+```js
+const apiKey = process.env.API_KEY;
+const secondApiKey = process.env.SECOND_API_KEY;
+```
+
+-   Tell Vercel about your environment variables
+    -   Project Settings
+    -   Environment Variables
+    -   "Add New"
+        -   For each line of your .env file, add them here
+    -   Redeploy your project (by addings, committing and pushing)
